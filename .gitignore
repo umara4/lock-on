@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.pt
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+vision/ability_calibration.json

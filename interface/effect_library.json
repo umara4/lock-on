@@ -1,0 +1,14 @@
+{
+  "pose_actions": {
+    "two_finger_focus": {
+      "recognized": ["energy_charge", "aura"],
+      "released": ["lightning"]
+    },
+    "two_hand_seal": {
+      "recognized": ["energy_burst"]
+    }
+  },
+  "sequence_actions": {
+    "focus_then_seal": "fireball"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "templates": [
+    {
+      "id": "two_finger_focus",
+      "display_name": "TWO-FINGER FOCUS",
+      "description": "Index and middle fingers extended; thumb, ring, and little fingers folded.",
+      "kind": "single",
+      "finger_states": [false, true, true, false, false],
+      "min_hold_seconds": 0.35,
+      "min_score": 0.95,
+      "priority": 10
+    },
+    {
+      "id": "two_hand_seal",
+      "display_name": "TWO-HAND SEAL",
+      "description": "Both hands form the focus sign, face a similar direction, and stay close together.",
+      "kind": "two_hand",
+      "finger_states": [false, true, true, false, false],
+      "min_hold_seconds": 0.45,
+      "min_score": 0.95,
+      "max_center_distance_scales": 2.8,
+      "max_vertical_offset_scales": 0.9,
+      "min_orientation_alignment": 0.25,
+      "priority": 20
+    }
+  ],
+  "sequences": [
+    {
+      "id": "focus_then_seal",
+      "display_name": "FOCUS / SEAL",
+      "steps": ["two_finger_focus", "two_hand_seal"],
+      "max_gap_seconds": 3.0,
+      "completion_effect": "fireball"
+    }
+  ]
+}
